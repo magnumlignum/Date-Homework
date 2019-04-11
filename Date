@@ -1,0 +1,52 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	int m;
+	int d;
+	int y;
+	
+	cout<<"This program will give the date in Month-Day-Year format.\n";
+	cout<<"\nEnter Month (1-12): ";
+	cin>>m;
+	cout<<"\nEnter Day (1-31): ";
+	cin>>d;
+	cout<<"\nEnter Year (1000-9999): ";
+	cin>>y;
+	cout<<"\n";
+	
+	while ((int(float(m))) == float(m) && (int(float(d))) == float(d)  && (int(float(y))) == float(y))
+	
+	{
+	if (m==1 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"January "<<d<<", "<<y;
+	else if (m==2 && d>0 && d<29 && y>999 && y<10000)
+	cout<<"February "<<d<<", "<<y;
+	else if (m==3 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"March "<<d<<", "<<y;
+	else if (m==4 && d>0 && d<31 && y>999 && y<10000)
+	cout<<"April "<<d<<", "<<y;
+	else if (m==5 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"May "<<d<<", "<<y;
+	else if (m==6 && d>0 && d<31 && y>999 && y<10000)
+	cout<<"June "<<d<<", "<<y;
+	else if (m==7 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"July "<<d<<", "<<y;
+	else if (m==8 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"August "<<d<<", "<<y;
+	else if (m==9 && d>0 && d<31 && y>999 && y<10000)
+	cout<<"September "<<d<<", "<<y;
+	else if (m==10 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"October "<<d<<", "<<y;
+	else if (m==11 && d>0 && d<31 && y>999 && y<10000)
+	cout<<"November "<<d<<", "<<y;
+	else if (m==12 && d>0 && d<32 && y>999 && y<10000)
+	cout<<"December "<<d<<", "<<y;
+	else
+	cout<<"\nInvalid Input";
+	break;
+	}
+}
